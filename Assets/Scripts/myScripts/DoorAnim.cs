@@ -11,8 +11,9 @@ public class DoorAnim : MonoBehaviour,IInteractable
     private bool OpenDoor = true;
     private bool isRotating = false;
 
-    
 
+    FMOD.Studio.EventInstance DoorsSound;
+    public EventReference DoorsEvent;
 
     public void Interact()
     {
@@ -25,6 +26,7 @@ public class DoorAnim : MonoBehaviour,IInteractable
     void Start()
     {
         animator = GetComponent<Animator>();
+       
     }
 
    void DoorClose()
@@ -41,7 +43,39 @@ public class DoorAnim : MonoBehaviour,IInteractable
         
     }
 
-    
+     public void CloseSound1()
+    {
+        Debug.Log("closesound");
+        
+        
+            Debug.Log("Animator Event triggered: CloseSound1");
+            DoorsSound = FMODUnity.RuntimeManager.CreateInstance(DoorsEvent);
+            DoorsSound.setParameterByNameWithLabel("doorSwitcher", "close");
+            DoorsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
+            DoorsSound.start();
+        
+    }
+   public  void CloseSound2()
+    {
+        Debug.Log("closesound3");
+        
+        
+            DoorsSound = FMODUnity.RuntimeManager.CreateInstance(DoorsEvent);
+            DoorsSound.setParameterByNameWithLabel("doorSwitcher", "close2");
+            DoorsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
+            DoorsSound.start();
+        
+    }
+
+    public void OpenSound()
+    {
+        DoorsSound = FMODUnity.RuntimeManager.CreateInstance(DoorsEvent);
+        DoorsSound.setParameterByNameWithLabel("doorSwitcher", "open");
+        DoorsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
+        DoorsSound.start();
+    }
+
+
 
 
     void DoorsInteract()
@@ -49,6 +83,9 @@ public class DoorAnim : MonoBehaviour,IInteractable
         if(OpenDoor == true)
         {
             DoorClose();
+            
+           
+
             OpenDoor = false;
             isRotating=false;
         }
