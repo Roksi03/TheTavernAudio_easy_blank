@@ -109,6 +109,7 @@
     <Compile Include="Assets\Scripts\FPP_control.cs" />
     <Compile Include="Assets\Scripts\OldScripts\Fire_start.cs" />
     <Compile Include="Assets\Scripts\Interactor.cs" />
+    <Compile Include="Assets\Scripts\myScripts\DoorAnim.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
   </ItemGroup>
   <ItemGroup>

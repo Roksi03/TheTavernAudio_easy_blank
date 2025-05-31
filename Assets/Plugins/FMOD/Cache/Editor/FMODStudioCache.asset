@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638843129434314578
+  lastModified: 638843156106960435
   FileSizes:
   - Name: Desktop
-    Value: 6924576
+    Value: 6925280
   Exists: 1
 --- !u!114 &-4950194982327068596
 MonoBehaviour:
@@ -74,7 +74,7 @@ MonoBehaviour:
   - {fileID: -313076030461945232}
   MinDistance: 1
   MaxDistance: 20
-  Length: 750
+  Length: 625
 --- !u!114 &-2732306263686543695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   Name: doorSwitcher
   StudioPath: 
   Min: 0
-  Max: 1
+  Max: 2
   Default: 0
   ID:
     data1: 1671777598
@@ -153,6 +153,7 @@ MonoBehaviour:
   Labels:
   - open
   - close
+  - close2
   Exists: 1
 --- !u!114 &-87924581341253186
 MonoBehaviour:
@@ -169,7 +170,7 @@ MonoBehaviour:
   Path: fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638843129434314578
+  lastModified: 638843156106980455
   FileSizes:
   - Name: Desktop
     Value: 1406
@@ -203,7 +204,7 @@ MonoBehaviour:
   - {fileID: -7761843351668920083}
   StringsBanks:
   - {fileID: -87924581341253186}
-  cacheTime: 638843129434314578
+  cacheTime: 638843156106980455
   cacheVersion: 131617
 --- !u!114 &528899662706375529
 MonoBehaviour:

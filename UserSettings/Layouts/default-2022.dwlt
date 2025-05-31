@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 106
+  controlID: 110
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 439
     height: 939
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -299,9 +299,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 649
-    width: 1485
-    height: 342
+    y: 650
+    width: 1480
+    height: 341
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -349,9 +349,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fc6b0000fe6b0000006c0000026c0000046c0000066c0000106c0000126c0000146c0000166c0000186c0000
+      m_SelectedIDs: a687ffff
       m_LastClickedID: 0
-      m_ExpandedIDs: cadcffffb4e1ffffeef9ffffa4690000
+      m_ExpandedIDs: 68f8fffffef8ffffacf9ffff12faffff1afaffff8c5d0000bc5d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -705,9 +705,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 406.72665, y: -4.5720854, z: 269.6159}
+    m_Target: {x: 373.0428, y: -4.9907284, z: 290.7551}
     speed: 2
-    m_Value: {x: 406.72665, y: -4.5720854, z: 269.6159}
+    m_Value: {x: 373.0428, y: -4.9907284, z: 290.7551}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -753,9 +753,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.011370882, y: -0.9853018, z: 0.15738478, w: -0.07042754}
+    m_Target: {x: -0.102065675, y: 0.85778457, z: -0.18788297, w: -0.468173}
     speed: 2
-    m_Value: {x: -0.011131015, y: -0.985072, z: 0.15734826, w: -0.06892611}
+    m_Value: {x: -0.10203008, y: 0.8574855, z: -0.18781747, w: -0.46800974}
   m_Size:
     m_Target: 21.883875
     speed: 2
@@ -936,10 +936,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 363
+    x: 352
     y: 73
-    width: 1101
-    height: 535
+    width: 1127
+    height: 556
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -953,6 +953,7 @@ MonoBehaviour:
   m_ViewTransforms:
     m_KeySerializationHelper:
     - {fileID: 1107959513736936860, guid: 2d5f7720aaff1ee4ea406f4a53eee095, type: 2}
+    - {fileID: -4201111515005617602, guid: 05b155fdabe51a644b0822492096696d, type: 2}
     m_ValueSerializationHelper:
     - e00: 1
       e01: 0
@@ -970,10 +971,26 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 2d5f7720aaff1ee4ea406f4a53eee095, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 05b155fdabe51a644b0822492096696d, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 1107959513736936860, guid: 2d5f7720aaff1ee4ea406f4a53eee095, type: 2}
+  - m_Target: {fileID: -4201111515005617602, guid: 05b155fdabe51a644b0822492096696d, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -983,7 +1000,7 @@ MonoBehaviour:
   m_MiniTool: 0
   m_LockTracker:
     m_IsLocked: 0
-  m_CurrentEditor: 0
+  m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
 --- !u!114 &18
@@ -1031,7 +1048,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/TextMesh Pro/Examples & Extras/Textures
+    - Assets/animation/door
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1039,16 +1056,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/TextMesh Pro/Examples & Extras/Textures
+  - Assets/animation/door
   m_LastFoldersGridSize: 64
   m_LastProjectPath: C:\Users\Lenovo Legion\Desktop\audio\TheTavernAudio_easy_blank
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 479}
-    m_SelectedIDs: 1e6d0000
-    m_LastClickedID: 27934
-    m_ExpandedIDs: 000000001467000016670000186700001a6700001c6700001e67000020670000226700002467000026670000486700006467000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: ca750000
+    m_LastClickedID: 30154
+    m_ExpandedIDs: 000000000e67000010670000126700001467000016670000186700001a6700001c6700001e670000206700002267000066670000c675000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1076,7 +1093,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001467000016670000186700001a6700001c6700001e67000020670000226700002467000026670000
+    m_ExpandedIDs: 000000000e67000010670000126700001467000016670000186700001a6700001c6700001e6700002067000022670000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
