@@ -1233,7 +1233,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248650621}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
@@ -2414,6 +2414,7 @@ GameObject:
   - component: {fileID: 485849463}
   - component: {fileID: 485849462}
   - component: {fileID: 485849461}
+  - component: {fileID: 485849465}
   m_Layer: 0
   m_Name: FireplaceTrigger
   m_TagString: Untagged
@@ -2508,6 +2509,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &485849465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485849460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9851f7a55ac424b8a88ba3bf7ec135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireplaceEmitter: {fileID: 416996251}
 --- !u!1 &496232894
 GameObject:
   m_ObjectHideFlags: 0
@@ -3133,6 +3147,7 @@ GameObject:
   - component: {fileID: 613997990}
   - component: {fileID: 613997989}
   - component: {fileID: 613997994}
+  - component: {fileID: 613997995}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -3335,6 +3350,19 @@ MonoBehaviour:
       Data3: 1849591481
       Data4: -1439565815
     Path: event:/Sfx/jump
+--- !u!114 &613997995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613997984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc4a4da891945f49aaa5b911f9f8711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ambientActivated: 0
 --- !u!1 &688602384
 GameObject:
   m_ObjectHideFlags: 0
@@ -4535,6 +4563,7 @@ GameObject:
   - component: {fileID: 1039452382}
   - component: {fileID: 1039452381}
   - component: {fileID: 1039452380}
+  - component: {fileID: 1039452384}
   m_Layer: 0
   m_Name: RoomAmbTrigger 1
   m_TagString: Untagged
@@ -4629,6 +4658,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 882882083}
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
+--- !u!114 &1039452384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039452379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dbf81bbd6e742a47ab052aa598c527b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1072624433
 GameObject:
   m_ObjectHideFlags: 0
@@ -5363,7 +5404,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406632935}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 

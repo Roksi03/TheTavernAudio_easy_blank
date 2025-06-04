@@ -15,6 +15,9 @@ public class DoorAnim : MonoBehaviour,IInteractable
     FMOD.Studio.EventInstance DoorsSound;
     public EventReference DoorsEvent;
 
+    //FMOD.Studio.EventInstance InsideRoom;
+   // public EventReference insideRoomSnap;
+
     public void Interact()
     {
         if (!isRotating)
@@ -88,12 +91,17 @@ public class DoorAnim : MonoBehaviour,IInteractable
 
             OpenDoor = false;
             isRotating=false;
+           
         }
         else
         {
             DoorOpen();
+           
             OpenDoor = true;
             isRotating = false;
+        
         }
     }
+
+    
 }
