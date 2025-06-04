@@ -15,8 +15,8 @@ public class DoorAnim : MonoBehaviour,IInteractable
     FMOD.Studio.EventInstance DoorsSound;
     public EventReference DoorsEvent;
 
-    //FMOD.Studio.EventInstance InsideRoom;
-   // public EventReference insideRoomSnap;
+    FMOD.Studio.EventInstance InsideRoom;
+   public EventReference insideRoomSnap;
 
     public void Interact()
     {
@@ -67,7 +67,10 @@ public class DoorAnim : MonoBehaviour,IInteractable
             DoorsSound.setParameterByNameWithLabel("doorSwitcher", "close2");
             DoorsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
             DoorsSound.start();
-        
+        OpenDoor = false;
+        RoomsSnap();
+
+
     }
 
     public void OpenSound()
@@ -76,6 +79,8 @@ public class DoorAnim : MonoBehaviour,IInteractable
         DoorsSound.setParameterByNameWithLabel("doorSwitcher", "open");
         DoorsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
         DoorsSound.start();
+        OpenDoor = true;
+        RoomsSnap();
     }
 
 
@@ -91,7 +96,10 @@ public class DoorAnim : MonoBehaviour,IInteractable
 
             OpenDoor = false;
             isRotating=false;
-           
+
+            
+
+
         }
         else
         {
@@ -99,9 +107,30 @@ public class DoorAnim : MonoBehaviour,IInteractable
            
             OpenDoor = true;
             isRotating = false;
-        
+            
+
+
+        }
+    }
+    void RoomsSnap()
+    {
+        RoomAmbient roomAmbient = FindObjectOfType<RoomAmbient>();
+
+        if (roomAmbient.ambientActivated == true && OpenDoor== false)
+        {
+            Debug.Log("im in!");
+            InsideRoom = FMODUnity.RuntimeManager.CreateInstance(insideRoomSnap);
+            InsideRoom.start();
+        }
+        else
+        {
+            if (roomAmbient.ambientActivated == true && OpenDoor == true)
+            {
+                Debug.Log("it works");
+                InsideRoom.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                InsideRoom.release();
+            }
         }
     }
 
-    
 }

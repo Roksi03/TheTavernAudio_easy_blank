@@ -241,6 +241,7 @@ GameObject:
   - component: {fileID: 129069800}
   - component: {fileID: 129069799}
   - component: {fileID: 129069798}
+  - component: {fileID: 129069801}
   m_Layer: 0
   m_Name: RoomAmbTrigger 2
   m_TagString: Untagged
@@ -335,6 +336,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129069795}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &129069801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129069795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dbf81bbd6e742a47ab052aa598c527b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &131062900
 GameObject:
   m_ObjectHideFlags: 0
@@ -2229,6 +2242,13 @@ MonoBehaviour:
       Data3: 462910627
       Data4: 2075520517
     Path: event:/Sfx/doors
+  insideRoomSnap:
+    Guid:
+      Data1: -1526944583
+      Data2: 1303484894
+      Data3: 350761610
+      Data4: -1920561353
+    Path: snapshot:/InsideRoom
 --- !u!95 &421382205
 Animator:
   serializedVersion: 5
@@ -5171,6 +5191,13 @@ MonoBehaviour:
       Data3: 462910627
       Data4: 2075520517
     Path: event:/Sfx/doors
+  insideRoomSnap:
+    Guid:
+      Data1: -1526944583
+      Data2: 1303484894
+      Data3: 350761610
+      Data4: -1920561353
+    Path: snapshot:/InsideRoom
 --- !u!95 &1293620155
 Animator:
   serializedVersion: 5
@@ -8625,6 +8652,13 @@ MonoBehaviour:
       Data3: 462910627
       Data4: 2075520517
     Path: event:/Sfx/doors
+  insideRoomSnap:
+    Guid:
+      Data1: -1526944583
+      Data2: 1303484894
+      Data3: 350761610
+      Data4: -1920561353
+    Path: snapshot:/InsideRoom
 --- !u!1 &2002987395
 GameObject:
   m_ObjectHideFlags: 0
