@@ -126,7 +126,7 @@ public class Footsteps : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(transform.position, Vector3.down, out hit, distToGround + 0.5f))
                 {
-                    //Debug.Log(hit.collider.tag);
+                    Debug.Log(hit.collider.tag);
                     if (hit.collider.CompareTag("Stone"))
                     {
                         JumpSound.setParameterByNameWithLabel("footSwitcher", "stone");
@@ -139,12 +139,12 @@ public class Footsteps : MonoBehaviour
                     }
                     else if (hit.collider.CompareTag("Inside_stone"))
                     {
-                        LandSound.setParameterByNameWithLabel("footSwitcher", "stone");
+                        JumpSound.setParameterByNameWithLabel("footSwitcher", "stone");
                         JumpSound.start();
                     }
                     else if (hit.collider.CompareTag("Inside_wood"))
                     {
-                        LandSound.setParameterByNameWithLabel("Footsteps_surface", "Wood");
+                        JumpSound.setParameterByNameWithLabel("footSwitcher", "wood");
                         JumpSound.start();
                     }
                     else if (hit.collider.CompareTag("Bed"))
@@ -199,12 +199,12 @@ public class Footsteps : MonoBehaviour
                     }
                     else if (hit.collider.CompareTag("Inside_stone"))
                     {
-                        LandSound.setParameterByNameWithLabel("Footsteps_surface", "Stone");
+                        LandSound.setParameterByNameWithLabel("footSwitcher", "stone");
                         LandSound.start();
                     }
                     else if (hit.collider.CompareTag("Inside_wood"))
                     {
-                        LandSound.setParameterByNameWithLabel("Footsteps_surface", "Wood");
+                        LandSound.setParameterByNameWithLabel("footSwitcher", "wood");
                         LandSound.start();
                     }
                     else if (hit.collider.CompareTag("Bed"))
@@ -214,7 +214,7 @@ public class Footsteps : MonoBehaviour
                     }
                     else
                     {
-                        LandSound.setParameterByNameWithLabel("Footsteps_surface", "Stone");
+                        LandSound.setParameterByNameWithLabel("footSwitcher", "stone");
                         LandSound.start();
                     }
                 }
