@@ -3166,10 +3166,10 @@ GameObject:
   - component: {fileID: 613997993}
   - component: {fileID: 613997990}
   - component: {fileID: 613997989}
-  - component: {fileID: 613997994}
   - component: {fileID: 613997996}
   - component: {fileID: 613997995}
   - component: {fileID: 613997997}
+  - component: {fileID: 613997998}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -3339,39 +3339,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &613997994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613997984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5662db7a78ed10944a62b27bb1056215, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  footstepsEvent:
-    Guid:
-      Data1: -1651830367
-      Data2: 1273221214
-      Data3: 52054179
-      Data4: -482172536
-    Path: event:/Sfx/footsteps
-  jumpEvent:
-    Guid:
-      Data1: -635394743
-      Data2: 1267106508
-      Data3: 1849591481
-      Data4: -1439565815
-    Path: event:/Sfx/jump
-  landEvent:
-    Guid:
-      Data1: -635394743
-      Data2: 1267106508
-      Data3: 1849591481
-      Data4: -1439565815
-    Path: event:/Sfx/jump
 --- !u!114 &613997995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3424,6 +3391,18 @@ MonoBehaviour:
       Data3: -1884434241
       Data4: -1823581041
     Path: snapshot:/health
+--- !u!114 &613997998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613997984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909478be4e84b8249a53cdb2889c3406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &688602384
 GameObject:
   m_ObjectHideFlags: 0
