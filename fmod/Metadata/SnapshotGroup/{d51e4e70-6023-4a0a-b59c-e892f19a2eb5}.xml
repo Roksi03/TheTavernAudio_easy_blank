@@ -4,6 +4,7 @@
 		<relationship name="items">
 			<destination>{a4fcacb9-99de-4db1-8a32-e814378f868d}</destination>
 			<destination>{96e3deea-ba13-4aab-9023-56e12cd85c23}</destination>
+			<destination>{62f4ef48-9247-4e4c-bfd0-ad8f8f5c4e93}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{d70f2166-a9ca-40c4-8c8a-b85805842772}</destination>

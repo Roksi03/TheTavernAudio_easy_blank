@@ -3169,6 +3169,7 @@ GameObject:
   - component: {fileID: 613997994}
   - component: {fileID: 613997996}
   - component: {fileID: 613997995}
+  - component: {fileID: 613997997}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -3403,6 +3404,26 @@ MonoBehaviour:
       Data3: -514448496
       Data4: 593287212
     Path: snapshot:/Outside
+--- !u!114 &613997997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613997984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa7b242fd310f747935e50999d1290e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tavernEmitter: {fileID: 248650622}
+  healthSnapshot:
+    Guid:
+      Data1: 1660219208
+      Data2: 1313641031
+      Data3: -1884434241
+      Data4: -1823581041
+    Path: snapshot:/health
 --- !u!1 &688602384
 GameObject:
   m_ObjectHideFlags: 0
