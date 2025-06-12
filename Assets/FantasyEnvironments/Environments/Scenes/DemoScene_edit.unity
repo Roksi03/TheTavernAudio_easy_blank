@@ -1268,7 +1268,7 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 8.692993
+  OverrideMinDistance: 12.881195
   OverrideMaxDistance: 15
 --- !u!135 &248650623
 SphereCollider:
@@ -2129,8 +2129,8 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 2.42
-  OverrideMaxDistance: 3.51
+  OverrideMinDistance: 2.9202576
+  OverrideMaxDistance: 4.5465393
 --- !u!135 &416996252
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2538,7 +2538,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 485849460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d9851f7a55ac424b8a88ba3bf7ec135, type: 3}
+  m_Script: {fileID: 11500000, guid: e6fae67218338674dbf564166c18fe2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fireplaceEmitter: {fileID: 416996251}
@@ -4009,6 +4009,50 @@ Transform:
   - {fileID: 129069796}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &888418731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 888418733}
+  - component: {fileID: 888418732}
+  m_Layer: 0
+  m_Name: MenuVolume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &888418732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888418731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f4ed2e91580f4459a40df16f56ba56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &888418733
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888418731}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 352.2359, y: -13.555058, z: 288.27914}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &896572285
 GameObject:
   m_ObjectHideFlags: 0
@@ -5473,7 +5517,7 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 3.26
+  OverrideMinDistance: 6.04
   OverrideMaxDistance: 14.1
 --- !u!135 &1406632937
 SphereCollider:
@@ -5555,7 +5599,7 @@ Transform:
   m_GameObject: {fileID: 1406632935}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 395.25, y: 7.57, z: 313.38}
+  m_LocalPosition: {x: 399.77, y: 7.57, z: 316.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9276,3 +9320,4 @@ SceneRoots:
   - {fileID: 416996255}
   - {fileID: 144745140}
   - {fileID: 1406632940}
+  - {fileID: 888418733}

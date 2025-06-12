@@ -18,12 +18,12 @@ public class VCA : MonoBehaviour
 
     private void Start()
     {
-        GlobalVCA = FMODUnity.RuntimeManager.GetVCA("vca:/Mute");
-        MusicVCA = FMODUnity.RuntimeManager.GetVCA("vca:/Music");
-        TavernVCA = FMODUnity.RuntimeManager.GetVCA("vca:/Tavern_amb");
-        OutsideVCA = FMODUnity.RuntimeManager.GetVCA("vca:/Outside_amb");
+        GlobalVCA = FMODUnity.RuntimeManager.GetVCA("vca:/mute");
+        MusicVCA = FMODUnity.RuntimeManager.GetVCA("vca:/music");
+        TavernVCA = FMODUnity.RuntimeManager.GetVCA("vca:/tavern");
+        OutsideVCA = FMODUnity.RuntimeManager.GetVCA("vca:/outside");
 
-        GlobalVCA.setVolume(DecibelToLinear(-100));
+        //GlobalVCA.setVolume(DecibelToLinear(-100));
     }
 
     void Update()
