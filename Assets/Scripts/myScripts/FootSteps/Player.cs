@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : StateMachine.StateMachine
 {
+
     private void Start()
     {
         Debug.Log("chodzenie");
