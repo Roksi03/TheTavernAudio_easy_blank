@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -349,23 +349,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 345f0000
-      m_LastClickedID: 24372
-      m_ExpandedIDs: 1afaffff645d0000ea5d0000ea5e0000da5f0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 1afaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Wood_stairs_1
-        m_OriginalName: Wood_stairs_1
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 23978
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -705,9 +705,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 363.77823, y: -2.1291754, z: 264.8079}
+    m_Target: {x: 356.26758, y: -11.587442, z: 354.3781}
     speed: 2
-    m_Value: {x: 363.77823, y: -2.1291754, z: 264.8079}
+    m_Value: {x: 356.26758, y: -11.587442, z: 354.3781}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -753,9 +753,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.0236161, y: -0.9442468, z: 0.082530245, w: 0.3194363}
+    m_Target: {x: 0.14261252, y: -0.3927431, z: 0.06633852, w: 0.90665627}
     speed: 2
-    m_Value: {x: 0.023604175, y: -0.94377005, z: 0.082488574, w: 0.31927502}
+    m_Value: {x: 0.14254043, y: -0.39254457, z: 0.06630498, w: 0.9061979}
   m_Size:
     m_Target: 33.574154
     speed: 2
@@ -1065,7 +1065,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scripts/myScripts/FootSteps
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1073,16 +1073,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scripts/myScripts/FootSteps
   m_LastFoldersGridSize: 64
   m_LastProjectPath: C:\Users\Lenovo Legion\Desktop\audio\TheTavernAudio_easy_blank
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 498}
-    m_SelectedIDs: 74670000
-    m_LastClickedID: 26484
-    m_ExpandedIDs: 000000006c6700006e67000070670000726700007467000076670000786700007a6700007c6700007e67000080670000c867000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 466}
+    m_SelectedIDs: 20680000
+    m_LastClickedID: 26656
+    m_ExpandedIDs: 000000006c6700006e67000070670000726700007467000076670000786700007a6700007c6700007e67000080670000ec67000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1135,8 +1135,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 66120000
-    m_LastClickedInstanceID: 4710
+    m_SelectedInstanceIDs: b45d0000
+    m_LastClickedInstanceID: 23988
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300009461000000000000
     m_RenameOverlay:

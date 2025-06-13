@@ -8,6 +8,6 @@ public class Player : StateMachine.StateMachine
     private void Start()
     {
         Debug.Log("chodzenie");
-        Begin(new PlayerFootWood(this));
+        Begin(new PlayerFoot(this));
     }
 }
