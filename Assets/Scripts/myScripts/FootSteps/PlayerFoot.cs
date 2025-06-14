@@ -8,47 +8,35 @@ using UnityEngine.LowLevel;
 public class PlayerFoot : State
 {
 
-    
-
-
-
     FMOD.Studio.EventInstance FootstepsSound;
     private string footstepsEvent = "event:/Sfx/footsteps";
 
-
-
-
-
-
-    
-   
-   
-  
-   private MovementManager movementManager;
+    PlayerJump playerJump;
+    private MovementManager movementManager;
     private float lastFootstepTime = 0f;
     private float distToGround;
 
-   
+
     public PlayerFoot(StateMachine.StateMachine stateMachine) : base(stateMachine) { }
 
 
-    
+
 
     public override void Enter()
     {
-       
-       movementManager = stateMachine.GetComponent<MovementManager>();
+
+        movementManager = stateMachine.GetComponent<MovementManager>();
         distToGround = stateMachine.GetComponent<Collider>().bounds.extents.y;
     }
     public override void Update()
     {
         if (movementManager.IsGrounded())
         {
-           movementManager.ResetVelocity();
+            movementManager.ResetVelocity();
         }
 
 
-       Vector3 move = movementManager.Walk();
+        Vector3 move = movementManager.Walk();
 
         movementManager.Move(move);
         movementManager.Gravity();
@@ -64,13 +52,14 @@ public class PlayerFoot : State
         }
         if (Input.GetButtonDown("Jump") && movementManager.IsGrounded())
         {
-            
+
             stateMachine.SetState(new PlayerJump(stateMachine));
+          
 
         }
     }
 
-     private void PlayFootsteps()
+    private void PlayFootsteps()
     {
         RaycastHit hit;
 
@@ -100,13 +89,26 @@ public class PlayerFoot : State
                 FootstepsSound.start();
                 FootstepsSound.release();
             }
-            
-               
 
-            
-                
+
+
+
+
         }
     }
-
-  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
