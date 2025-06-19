@@ -2129,8 +2129,8 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 2.9202576
-  OverrideMaxDistance: 4.684326
+  OverrideMinDistance: 3.2852478
+  OverrideMaxDistance: 7.1643066
 --- !u!135 &416996252
 SphereCollider:
   m_ObjectHideFlags: 0

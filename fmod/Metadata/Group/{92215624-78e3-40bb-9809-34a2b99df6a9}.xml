@@ -4,6 +4,9 @@
 		<property name="name">
 			<value>reverbSnapshot</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{43ce6747-7a2f-4fc5-b94d-19f8f5baebcc}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{85d0c921-2005-43ac-a035-9ffea117e963}</destination>
 		</relationship>
@@ -13,6 +16,17 @@
 		<relationship name="output">
 			<destination>{2efb8261-3f6c-42fe-a171-95cb873c8eb3}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{43ce6747-7a2f-4fc5-b94d-19f8f5baebcc}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{85d0c921-2005-43ac-a035-9ffea117e963}">
 		<relationship name="effects">
