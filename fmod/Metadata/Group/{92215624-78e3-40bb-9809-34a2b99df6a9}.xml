@@ -4,9 +4,6 @@
 		<property name="name">
 			<value>reverbSnapshot</value>
 		</property>
-		<relationship name="modulators">
-			<destination>{43ce6747-7a2f-4fc5-b94d-19f8f5baebcc}</destination>
-		</relationship>
 		<relationship name="effectChain">
 			<destination>{85d0c921-2005-43ac-a035-9ffea117e963}</destination>
 		</relationship>
@@ -17,31 +14,11 @@
 			<destination>{2efb8261-3f6c-42fe-a171-95cb873c8eb3}</destination>
 		</relationship>
 	</object>
-	<object class="ADSRModulator" id="{43ce6747-7a2f-4fc5-b94d-19f8f5baebcc}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>volume</value>
-		</property>
-		<property name="initialValue">
-			<value>-80</value>
-		</property>
-		<property name="finalValue">
-			<value>-80</value>
-		</property>
-	</object>
 	<object class="MixerBusEffectChain" id="{85d0c921-2005-43ac-a035-9ffea117e963}">
 		<relationship name="effects">
 			<destination>{79d9ece9-61ce-4a0f-a6d1-7f9a6f14bfba}</destination>
-			<destination>{f60ce034-6826-476e-a657-662c6640f367}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{74b2e818-0969-4c93-a78a-504bb46f22ab}" />
 	<object class="MixerBusFader" id="{79d9ece9-61ce-4a0f-a6d1-7f9a6f14bfba}" />
-	<object class="MultibandEqEffect" id="{f60ce034-6826-476e-a657-662c6640f367}">
-		<property name="frequencyA">
-			<value>21999.9902</value>
-		</property>
-		<property name="qualityA">
-			<value>0.885344803</value>
-		</property>
-	</object>
 </objects>

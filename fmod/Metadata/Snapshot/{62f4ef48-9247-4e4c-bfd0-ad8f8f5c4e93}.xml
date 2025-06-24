@@ -21,9 +21,6 @@
 		</relationship>
 		<relationship name="snapshotProperties">
 			<destination>{935b168c-41e2-4e6e-b2ec-aba1f1c56d27}</destination>
-			<destination>{09308838-8661-47ab-8862-e5b7da646c13}</destination>
-			<destination>{d9f20ebd-bc11-49ab-ac3c-2e11049e0aa4}</destination>
-			<destination>{6a5c64d3-b15f-4d27-be11-c353bedb1d9f}</destination>
 			<destination>{8367b4a5-33cd-4701-b25a-f9152920cebd}</destination>
 			<destination>{a359aded-72dd-41da-a496-c6447103d736}</destination>
 			<destination>{addbd8a6-ecf4-47ce-b612-eebb704e593b}</destination>
@@ -51,39 +48,6 @@
 			<destination>{92215624-78e3-40bb-9809-34a2b99df6a9}</destination>
 		</relationship>
 	</object>
-	<object class="SnapshotProperty" id="{09308838-8661-47ab-8862-e5b7da646c13}">
-		<property name="propertyName">
-			<value>frequencyA</value>
-		</property>
-		<property name="value">
-			<value>387.055267</value>
-		</property>
-		<relationship name="automatableObject">
-			<destination>{f60ce034-6826-476e-a657-662c6640f367}</destination>
-		</relationship>
-	</object>
-	<object class="SnapshotProperty" id="{d9f20ebd-bc11-49ab-ac3c-2e11049e0aa4}">
-		<property name="propertyName">
-			<value>qualityA</value>
-		</property>
-		<property name="value">
-			<value>0.751586199</value>
-		</property>
-		<relationship name="automatableObject">
-			<destination>{f60ce034-6826-476e-a657-662c6640f367}</destination>
-		</relationship>
-	</object>
-	<object class="SnapshotProperty" id="{6a5c64d3-b15f-4d27-be11-c353bedb1d9f}">
-		<property name="propertyName">
-			<value>gainA</value>
-		</property>
-		<property name="value">
-			<value>0</value>
-		</property>
-		<relationship name="automatableObject">
-			<destination>{f60ce034-6826-476e-a657-662c6640f367}</destination>
-		</relationship>
-	</object>
 	<object class="SnapshotProperty" id="{8367b4a5-33cd-4701-b25a-f9152920cebd}">
 		<property name="propertyName">
 			<value>level</value>
@@ -102,9 +66,6 @@
 		<property name="value">
 			<value>0</value>
 		</property>
-		<relationship name="modulators">
-			<destination>{26b588e2-095e-4363-9e54-e454abc2a840}</destination>
-		</relationship>
 		<relationship name="automatableObject">
 			<destination>{3d9d5807-f725-47e4-9171-5d87b97d5845}</destination>
 		</relationship>
@@ -156,16 +117,5 @@
 		<relationship name="mixerStrip">
 			<destination>{3d9d5807-f725-47e4-9171-5d87b97d5845}</destination>
 		</relationship>
-	</object>
-	<object class="ADSRModulator" id="{26b588e2-095e-4363-9e54-e454abc2a840}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>value</value>
-		</property>
-		<property name="initialValue">
-			<value>-80</value>
-		</property>
-		<property name="finalValue">
-			<value>-80</value>
-		</property>
 	</object>
 </objects>
