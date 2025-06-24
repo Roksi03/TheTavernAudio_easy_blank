@@ -34,7 +34,7 @@ public class PlayerJump : State
     {
 
         Vector3 move = movementManager.Walk();
-        movementManager.Move(move);
+        movementManager.Move(move,4f);
         movementManager.Gravity();
         PlayJump();
 

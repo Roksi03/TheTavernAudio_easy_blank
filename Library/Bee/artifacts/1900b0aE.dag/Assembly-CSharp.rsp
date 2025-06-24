@@ -366,6 +366,7 @@
 "Assets/Scripts/myScripts/FootSteps/Player.cs"
 "Assets/Scripts/myScripts/FootSteps/PlayerFoot.cs"
 "Assets/Scripts/myScripts/FootSteps/PlayerJump.cs"
+"Assets/Scripts/myScripts/FootSteps/PlayerRun.cs"
 "Assets/Scripts/myScripts/StateMachine/State.cs"
 "Assets/Scripts/myScripts/StateMachine/StateMachine.cs"
 "Assets/Scripts/myScripts/StateMachine/StateStack.cs"

@@ -13,7 +13,7 @@ public class PlayerFoot : State
 
     PlayerJump playerJump;
     private MovementManager movementManager;
-    private float lastFootstepTime = 0f;
+    public float lastFootstepTime = 0f;
     private float distToGround;
 
 
@@ -38,7 +38,7 @@ public class PlayerFoot : State
 
         Vector3 move = movementManager.Walk();
 
-        movementManager.Move(move);
+        movementManager.Move(move,4f);
         movementManager.Gravity();
 
         if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
@@ -57,9 +57,14 @@ public class PlayerFoot : State
           
 
         }
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            stateMachine.SetState(new PlayerRun(stateMachine));
+        }
+        
     }
 
-    private void PlayFootsteps()
+    public void PlayFootsteps()
     {
         RaycastHit hit;
 

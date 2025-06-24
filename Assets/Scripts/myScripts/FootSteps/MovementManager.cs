@@ -22,7 +22,7 @@ public class MovementManager : MonoBehaviour
         controller.Move(velocity *  Time.deltaTime);
     }
 
-    public void Move(Vector3 direction)
+    public void Move(Vector3 direction, float speed)
     {
         controller.Move(direction * speed * Time.deltaTime);
     }
