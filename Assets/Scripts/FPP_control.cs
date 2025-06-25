@@ -6,17 +6,13 @@ using UnityEngine;
 public class FPSController : MonoBehaviour
 {
     public Camera playerCamera;
-    public float walkSpeed = 6f;
-    public float runSpeed = 12f;
-    public float jumpPower = 7f;
-    public float gravity = 10f;
+
 
 
     public float lookSpeed = 2f;
     public float lookXLimit = 45f;
 
 
-    Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
 
     public bool canMove = true;
@@ -63,8 +59,7 @@ public class FPSController : MonoBehaviour
 
         //#endregion
 
-        #region Handles Rotation
-        characterController.Move(moveDirection * Time.deltaTime);
+      
 
         if (canMove)
         {
@@ -74,6 +69,6 @@ public class FPSController : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
 
-        #endregion
+   
     }
 }  

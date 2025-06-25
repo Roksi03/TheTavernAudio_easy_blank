@@ -12,13 +12,18 @@ public class PlayerJump : State
 
     float jumpHeight = 1f;
     private float distToGround;
+
+    
    
 
     private MovementManager movementManager;
     private PlayerFoot playerFoot;
 
     public static PlayerJump playerJump;
-    public PlayerJump(StateMachine.StateMachine stateMachine) : base(stateMachine) { }
+    public PlayerJump(StateMachine.StateMachine stateMachine) : base(stateMachine) { 
+    
+   
+    }
 
 
     public override void Enter()
@@ -34,7 +39,9 @@ public class PlayerJump : State
     {
 
         Vector3 move = movementManager.Walk();
-        movementManager.Move(move,4f);
+        movementManager.Move(move,5f);
+
+        
         movementManager.Gravity();
         PlayJump();
 
@@ -42,6 +49,8 @@ public class PlayerJump : State
         {
             stateMachine.Begin(new PlayerFoot(stateMachine));
         }
+       
+       
     }
 
     public void PlayJump()

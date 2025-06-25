@@ -38,7 +38,7 @@ public class PlayerFoot : State
 
         Vector3 move = movementManager.Walk();
 
-        movementManager.Move(move,4f);
+        movementManager.Move(move, 4f);
         movementManager.Gravity();
 
         if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)

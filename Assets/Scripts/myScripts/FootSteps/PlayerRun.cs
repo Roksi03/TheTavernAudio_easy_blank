@@ -14,6 +14,7 @@ public class PlayerRun : State
     private MovementManager movementManager;
     public float lastFootstepTime = 0f;
     private float distToGround;
+  
 
 
     public override void Enter()
@@ -30,7 +31,7 @@ public class PlayerRun : State
 
         Vector3 move = movementManager.Walk();
 
-        movementManager.Move(move,7f);
+        movementManager.Move(move, 7f);
         movementManager.Gravity();
 
         if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
@@ -46,7 +47,16 @@ public class PlayerRun : State
         if (!Input.GetKey(KeyCode.LeftShift))
         {
             stateMachine.Begin(new PlayerFoot(stateMachine));
+           
         }
+        if (Input.GetButtonDown("Jump") && movementManager.IsGrounded())
+        {
+
+            stateMachine.SetState(new PlayerJump(stateMachine));
+
+
+        }
+       
     }
 
     public void PlayFootstepss()

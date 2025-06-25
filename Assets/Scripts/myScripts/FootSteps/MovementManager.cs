@@ -7,7 +7,10 @@ public class MovementManager : MonoBehaviour
      public Vector3 velocity;
 
     private float gravity = -9.81f * 2;
-    private float speed = 5f;
+
+
+   
+    
 
     private CharacterController controller;
 
@@ -22,7 +25,7 @@ public class MovementManager : MonoBehaviour
         controller.Move(velocity *  Time.deltaTime);
     }
 
-    public void Move(Vector3 direction, float speed)
+    public void Move(Vector3 direction,float speed)
     {
         controller.Move(direction * speed * Time.deltaTime);
     }
