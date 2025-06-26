@@ -5527,7 +5527,7 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 6.04
+  OverrideMinDistance: 6.6136947
   OverrideMaxDistance: 14.1
 --- !u!135 &1406632937
 SphereCollider:

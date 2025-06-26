@@ -5,7 +5,7 @@
 			<value>Master Bus</value>
 		</property>
 		<relationship name="modulators">
-			<destination>{c506afb7-560e-4a95-a566-ce060cd410f9}</destination>
+			<destination>{e2f60eec-c718-4ea2-a441-f7f1ab2a8fcf}</destination>
 		</relationship>
 		<relationship name="masters">
 			<destination>{4d5768b0-a2ea-42f6-bc12-25bd9b555cd3}</destination>
@@ -20,21 +20,15 @@
 			<destination>{d70f2166-a9ca-40c4-8c8a-b85805842772}</destination>
 		</relationship>
 	</object>
-	<object class="ADSRModulator" id="{c506afb7-560e-4a95-a566-ce060cd410f9}">
+	<object class="ADSRModulator" id="{e2f60eec-c718-4ea2-a441-f7f1ab2a8fcf}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>volume</value>
 		</property>
 		<property name="initialValue">
 			<value>-80</value>
 		</property>
-		<property name="attackTime">
-			<value>551.282104</value>
-		</property>
-		<property name="peakValue">
-			<value>0.577777863</value>
-		</property>
 		<property name="releaseTime">
-			<value>820.512817</value>
+			<value>1807.69141</value>
 		</property>
 		<property name="finalValue">
 			<value>-80</value>

@@ -4,9 +4,6 @@
 		<property name="name">
 			<value>Inside</value>
 		</property>
-		<relationship name="modulators">
-			<destination>{48f6ec23-a5c0-45e5-a5d9-6380035d4a8c}</destination>
-		</relationship>
 		<relationship name="effectChain">
 			<destination>{a7c7651f-74ca-4695-8e27-c3393d0c4140}</destination>
 		</relationship>
@@ -16,20 +13,6 @@
 		<relationship name="output">
 			<destination>{3d9d5807-f725-47e4-9171-5d87b97d5845}</destination>
 		</relationship>
-	</object>
-	<object class="ADSRModulator" id="{48f6ec23-a5c0-45e5-a5d9-6380035d4a8c}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>volume</value>
-		</property>
-		<property name="initialValue">
-			<value>-80</value>
-		</property>
-		<property name="attackTime">
-			<value>551.282104</value>
-		</property>
-		<property name="finalValue">
-			<value>-80</value>
-		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{a7c7651f-74ca-4695-8e27-c3393d0c4140}">
 		<relationship name="effects">
@@ -41,7 +24,7 @@
 	<object class="MixerBusFader" id="{7f0bde3d-ff3b-4dd4-82ac-77c168b3f2ed}" />
 	<object class="MixerSend" id="{1a31845e-6be6-48d1-9495-9d8525d44866}">
 		<property name="level">
-			<value>-48</value>
+			<value>-31</value>
 		</property>
 		<property name="inputFormat">
 			<value>2</value>
