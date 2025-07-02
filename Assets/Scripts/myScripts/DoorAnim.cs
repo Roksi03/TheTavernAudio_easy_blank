@@ -95,7 +95,7 @@ public class DoorAnim : MonoBehaviour,IInteractable
            
 
             OpenDoor = false;
-            isRotating=false;
+           
 
             
 
@@ -106,7 +106,7 @@ public class DoorAnim : MonoBehaviour,IInteractable
             DoorOpen();
            
             OpenDoor = true;
-            isRotating = false;
+            
             
 
 
@@ -131,6 +131,12 @@ public class DoorAnim : MonoBehaviour,IInteractable
                 InsideRoom.release();
             }
         }
+    }
+
+    public void DoorAnimFinish()
+    {
+        isRotating = false;
+        Debug.Log("isRotating");
     }
 
 }

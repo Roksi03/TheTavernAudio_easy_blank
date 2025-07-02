@@ -67,7 +67,7 @@
 			<value>0</value>
 		</property>
 		<relationship name="modulators">
-			<destination>{c1cf8e3b-092c-4034-a408-29eff1f074f9}</destination>
+			<destination>{fd9e6099-59bb-438d-ab28-7a4703459666}</destination>
 		</relationship>
 		<relationship name="automatableObject">
 			<destination>{3d9d5807-f725-47e4-9171-5d87b97d5845}</destination>
@@ -121,15 +121,27 @@
 			<destination>{3d9d5807-f725-47e4-9171-5d87b97d5845}</destination>
 		</relationship>
 	</object>
-	<object class="ADSRModulator" id="{c1cf8e3b-092c-4034-a408-29eff1f074f9}">
+	<object class="ADSRModulator" id="{fd9e6099-59bb-438d-ab28-7a4703459666}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>value</value>
 		</property>
 		<property name="initialValue">
-			<value>-80</value>
+			<value>0.755554199</value>
+		</property>
+		<property name="attackTime">
+			<value>775.641113</value>
+		</property>
+		<property name="peakValue">
+			<value>-9.82222366</value>
+		</property>
+		<property name="sustainValue">
+			<value>-10.3999996</value>
+		</property>
+		<property name="releaseTime">
+			<value>551.282104</value>
 		</property>
 		<property name="finalValue">
-			<value>-80</value>
+			<value>0.75999999</value>
 		</property>
 	</object>
 </objects>
